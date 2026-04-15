@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wedding Invitation | Karthik & Nishmitha (v2.0)</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="no-scroll">
+    <!-- Elegant Invitation Opening -->
+    <div id="intro-overlay" class="intro-overlay">
+        <div class="intro-background"></div>
+        <div class="intro-card">
+
+            <div class="card-border"></div>
+            <h3 class="intro-date" style="margin-bottom: 0;">The Wedding of</h3>
+            <h1 class="couple-names-intro" style="margin: 10px 0; line-height: 1.2;">Karthik <br><span
+                    style="font-size: 0.6em; line-height: 1;">&</span><br> Nishmitha</h1>
+            <p class="intro-date" style="margin-top: 0;">April 30th, 2026</p>
+            <button id="varmala-start" class="open-btn">Open Invitation</button>
+        </div>
+    </div>
+
+    <!-- Floating Particles Container -->
+    <div id="particles-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="2500">
+            <h3 class="cursive">We are getting married</h3>
+            <h1 class="couple-names">Karthik & Nishmitha</h1>
+            <p class="date-hero">April 30th, 2026</p>
+            <div id="timer" class="timer-container hero-timer">
+                <div class="timer-item" data-aos="zoom-in" data-aos-delay="100">
+                    <span id="days">00</span>
+                    <label>Days</label>
+                </div>
+                <div class="timer-item" data-aos="zoom-in" data-aos-delay="200">
+                    <span id="hours">00</span>
+                    <label>Hours</label>
+                </div>
+                <div class="timer-item" data-aos="zoom-in" data-aos-delay="300">
+                    <span id="minutes">00</span>
+                    <label>Minutes</label>
+                </div>
+                <div class="timer-item" data-aos="zoom-in" data-aos-delay="400">
+                    <span id="seconds">00</span>
+                    <label>Seconds</label>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-indicator" class="scroll-indicator">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+        <!--<button id="music-toggle" class="music-btn" aria-label="Toggle Music">
+            <span class="icon">🎵</span>
+        </button>-->
+    </section>
+
+
+
+    <!-- The Blessed Families Section -->
+    <section class="families" id="families">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title cursive">The Blessed Families</h2>
+            <div class="families-grid">
+                <!-- Groom side -->
+                <div class="family-card" data-aos="fade-right">
+                    <h3 class="member-name cursive">Karthik</h3>
+                    <p class="parentage">Beloved Son of</p>
+                    <p class="parents">Smt Vedhavathi &<br>Sri Krishnappa Poojary</p>
+                </div>
+                <!-- Divider -->
+                <div class="family-divider">
+                    <span>&</span>
+                </div>
+                <!-- Bride side -->
+                <div class="family-card" data-aos="fade-left">
+                    <h3 class="member-name cursive">Nishmitha</h3>
+                    <p class="parentage">Beloved Daughter of</p>
+                    <p class="parents">Smt Jayanti &<br>Sri Shekhar Poojary</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Events Section -->
+        <section class="events" id="events">
+            <div class="container">
+                <h2 class="section-title cursive" data-aos="fade-down">Celebrate With Us</h2>
+                <div class="events-grid">
+                    <!-- Mehendi -->
+                    <div class="event-card event-mehendi" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Mehendi</h3>
+                        <p class="event-date">Tuesday, 28th April 2026</p>
+                        <p class="event-time">6:00 PM onwards</p>
+                        <p class="event-venue">"Shree Krishna Nilaya House", Mutturu Mattu</p>
+                        <div class="action-btns">
+                            <a href=" https://maps.app.goo.gl/Sc8Vf4LripdBkNmp7?g_st=iw" target="_blank"
+                                class="btn btn-maps">Google Maps</a>
+                        </div>
+                    </div>
+                    <!-- Wedding -->
+                    <div class="event-card event-wedding" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Wedding</h3>
+                        <p class="event-date">Thursday, 30th April 2026</p>
+                        <p class="event-time">Muhurtham: 08:02 AM</p>
+                        <p class="event-venue">"Kateel Shree Durga Parameshwari Temple", Kateel</p>
+                        <div class="action-btns">
+                            <a href=" https://maps.app.goo.gl/E1o7wWudVfo43jsn6?g_st=iw" target="_blank"
+                                class="btn btn-maps">Google Maps</a>
+                        </div>
+                    </div>
+                    <!-- Reception -->
+                    <div class="event-card event-reception" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Reception</h3>
+                        <p class="event-date">Thursday, 30rd April 2026</p>
+                        <p class="event-time">12:00 PM onwards</p>
+                        <p class="event-venue">"Preetham Garden Hall", Moodbidri</p>
+                        <div class="action-btns">
+                            <a href=" https://maps.app.goo.gl/BzF5Z3z38hzDvECh6?g_st=iw" target="_blank"
+                                class="btn btn-maps">Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p class="cursive">Thank You!</p>
+                <p>We said "YES"...now it's your turn to say "We'll be there!"</p>
+                <div class="footer-names">K&N</div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Indicator -->
+        <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+            &#8593;
+        </button>
+
+        <!-- AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
